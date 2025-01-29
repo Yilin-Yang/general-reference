@@ -509,7 +509,7 @@ void some_function() {
   std::map<std::string, IntVector> names_to_vectors;
   names_to_vectors["billy magic"] = std::move(vec);
 
-  std::cout << names_to_vectors["billy magic"] << std::endl;  // prints 6
+  std::cout << names_to_vectors["billy magic"].size() << std::endl;  // prints 6
   std::cout << vec.size() << std::endl;  // prints 0
 
   // ...
